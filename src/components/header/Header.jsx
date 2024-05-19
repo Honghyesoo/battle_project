@@ -7,11 +7,13 @@ const Header = () => {
     <>
       <div className="header-container">
         <div className="header_nav1">
-          <img
-            className="logo_img"
-            src={require("../../img/battleLogo.jpg")}
-            alt="logo"
-          />
+          <a href="/">
+            <img
+              className="logo_img"
+              src={require("../../img/battleLogo.jpg")}
+              alt="logo"
+            />
+          </a>
 
           <div
             onMouseOver={() => setIsHovering(true)}

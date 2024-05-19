@@ -78,6 +78,10 @@ a {
     color: white;
     text-align: center;
     line-height: 60px;
+    opacity: 0.4;
+  }
+  .header_nav1-1 > a:hover {
+    opacity: 1;
   }
   .loginBox {
     width: 350px;
