@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Main.css";
+import News from "./News";
 
 const Main = () => {
   const artRef = useRef(null);
   const keyLayoutRef = useRef(null);
-
   const [scrollOffset, setScrollOffset] = useState(0);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const Main = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 400) {
+      if (window.scrollY >= 700) {
         if (artRef.current) {
           artRef.current.classList.add("visible");
         }
@@ -30,13 +30,6 @@ const Main = () => {
           artRef.current.classList.remove("visible");
         }
       }
-
-      // if (window.scrollY >= 400) {
-      //   const scrollOffset = Math.min(window.scrollY, 500);
-      //   if (keyLayoutRef.current) {
-      //     keyLayoutRef.current.style.transform = `translateX(-${scrollOffset}px)`;
-      //   }
-      // }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -44,6 +37,15 @@ const Main = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+
+  useEffect(() => {
+    const keyLayout = keyLayoutRef.current;
+    if (keyLayout) {
+      const totalWidth = keyLayout.scrollWidth;
+      const animationTime = totalWidth / 100;
+      keyLayout.style.animation = `slide ${animationTime}s linear infinite`;
+    }
   }, []);
 
   return (
@@ -65,28 +67,140 @@ const Main = () => {
           />
         ))}
       </div>
-
+      {/* =========== */}
       <div ref={artRef} className="art">
         Key Art
       </div>
-      <div ref={keyLayoutRef} className="key_layout">
-        <img
-          className="key_img1 "
-          src={require("../../img/Blackpink.jpg")}
-          alt=""
-        />
-        <img
-          className="key_img2"
-          src={require("../../img/Season.jpg")}
-          alt=""
-        />
-        <img className="key_img3 " src={require("../../img/SON.jpg")} alt="" />
-        <img
-          className="key_img2 "
-          src={require("../../img/Season2.jpg")}
-          alt=""
-        />
+      <div className="slideBox">
+        <div ref={keyLayoutRef} className="key_layout">
+          <div className="key_img1">
+            <div className="key1">
+              <div className="key1_text">
+                Season 13 BlackPink Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img2">
+            <div className="key1">
+              <div className="key2_text">
+                Season 13 TAEGO Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img3">
+            <div className="key1">
+              <div className="key3_text">
+                Season 13 SON Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img4">
+            <div className="key1">
+              <div className="key4_text">Season 13 Collaboration Key Art</div>
+            </div>
+          </div>
+
+          <div className="key_img1">
+            <div className="key1">
+              <div className="key1_text">
+                Season 13 BlackPink Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img2">
+            <div className="key1">
+              <div className="key2_text">
+                Season 13 TAEGO Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img3">
+            <div className="key1">
+              <div className="key3_text">
+                Season 13 SON Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img4">
+            <div className="key1">
+              <div className="key4_text">Season 13 Collaboration Key Art</div>
+            </div>
+          </div>
+
+          <div className="key_img1">
+            <div className="key1">
+              <div className="key1_text">
+                Season 13 BlackPink Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img2">
+            <div className="key1">
+              <div className="key2_text">
+                Season 13 TAEGO Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img3">
+            <div className="key1">
+              <div className="key3_text">
+                Season 13 SON Collaboration Key Art
+              </div>
+            </div>
+          </div>
+
+          <div className="key_img4">
+            <div className="key1">
+              <div className="key4_text">Season 13 Collaboration Key Art</div>
+            </div>
+          </div>
+        </div>
       </div>
+      {/* =========== */}
+
+      <div className="youtube_text">Media Strategy</div>
+      <div className="backGround2">
+        <div className="youtube_layout">
+          <div className="youtube_sc">
+            <img
+              className="youtube_box"
+              src={require("../../img/youtube1.png")}
+              alt=""
+            />
+            <img
+              className="youtube_box"
+              src={require("../../img/youtube2.png")}
+              alt=""
+            />
+            <img
+              className="youtube_box"
+              src={require("../../img/youtube3.png")}
+              alt=""
+            />
+            <img
+              className="youtube_box"
+              src={require("../../img/youtube5.png")}
+              alt=""
+            />
+          </div>
+          <div className="youtube_sc2">
+            <img
+              className="youtube_img"
+              src={require("../../img/youtube4.png")}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <News />
 
       <div style={{ height: "500px" }}></div>
     </>

@@ -1,17 +1,17 @@
-@keyframes expand {
+/* @keyframes expand {
   0% {
     height: 0;
   }
   100% {
-    height: 150px; /* 원하는 펼쳐진 높이로 조정하세요 */
+    height: 150px; 
   }
-}
+} */
 a {
   color: white;
   text-decoration: none;
 }
 
-@keyframes slideUp {
+/* @keyframes slideUp {
   0% {
     transform: translateY(0);
     opacity: 1;
@@ -30,7 +30,7 @@ a {
     transform: translateY(100%);
     opacity: 0;
   }
-}
+} */
 
 @media screen and (min-width: 1450px) {
   .header-container {
