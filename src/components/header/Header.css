@@ -1,36 +1,7 @@
-/* @keyframes expand {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 150px; 
-  }
-} */
 a {
   color: white;
   text-decoration: none;
 }
-
-/* @keyframes slideUp {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-@keyframes slideDown {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-} */
 
 @media screen and (min-width: 1450px) {
   .header-container {

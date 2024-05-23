@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Main.css";
-import News from "./News";
+import ImageSlider from "../../components/slider/ImageSlider";
 
 const Main = () => {
   const artRef = useRef(null);
@@ -200,9 +200,10 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <News />
 
-      <div style={{ height: "500px" }}></div>
+      <ImageSlider />
+
+      <div style={{ height: "200px" }}></div>
     </>
   );
 };
