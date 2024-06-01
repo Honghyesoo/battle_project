@@ -54,7 +54,7 @@ const ImageSlider = ({ slidesToShow = 3 }) => {
 
   return (
     <>
-      <div className="newH1">Breack News</div>
+      <div className="newH1">News</div>
       <Slider {...settings} className="sliderBox">
         <div className={0 === imageIndex ? "activeSlide" : "slide"}>
           <div className="news_lay">

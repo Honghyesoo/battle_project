@@ -218,6 +218,7 @@ body {
   -webkit-text-stroke: 3px rgb(255, 255, 216);
   line-height: 0;
 }
+
 .backGround2 {
   position: relative;
   width: 100%;
@@ -247,6 +248,7 @@ body {
   display: flex;
   margin: 150px 0;
 }
+
 .youtube_sc {
   width: 50%;
   display: flex;
@@ -258,6 +260,28 @@ body {
   margin: 10px 13px 0 0;
   transition: box-shadow 0.3s ease;
 }
+
+@media screen and (min-width: 1070px) and (max-width: 1350px) {
+  .youtube_layout {
+    width: 80%;
+    height: 370px;
+  }
+  .youtube_box {
+    width: 48%;
+    margin: 10px 5px 0 0;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1069px) {
+  .youtube_layout {
+    width: 80%;
+    height: 370px;
+  }
+  .youtube_box {
+    margin: 10px 5px 0 0;
+  }
+}
+
 .youtube_box:hover {
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.6);
 }

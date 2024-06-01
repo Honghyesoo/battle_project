@@ -20,14 +20,14 @@ const Main = () => {
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    // return () => {
+    //   window.removeEventListener("scroll", handleScroll);
+    // };
   }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY >= 700) {
+      if (window.scrollY >= 500) {
         if (artRef.current) {
           artRef.current.classList.add("visible");
         }
@@ -48,9 +48,9 @@ const Main = () => {
   useEffect(() => {
     const keyLayout = keyLayoutRef.current;
     if (keyLayout) {
-      const totalWidth = keyLayout.scrollWidth;
-      const animationTime = totalWidth / 100;
-      keyLayout.style.animation = `slide ${animationTime}s linear infinite`;
+      const totalWidth = keyLayout.scrollWidth / 100;
+
+      keyLayout.style.animation = `slide ${totalWidth}s linear infinite`;
     }
   }, []);
 

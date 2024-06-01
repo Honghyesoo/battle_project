@@ -4,6 +4,14 @@
   src: url("../../fonts/HeadlinerNo.45\ DEMO.ttf") format("truetype");
 }
 
+.newH1 {
+  width: 15%;
+  margin: 150px auto 150px;
+  font-size: 130px;
+  font-family: "Art";
+  -webkit-text-stroke: 3px rgb(255, 255, 216);
+}
+
 .sliderBox {
   width: 95%;
   margin: 0 auto;
@@ -82,13 +90,7 @@
   font-size: 14px;
   margin: 20px 30px;
 }
-.newH1 {
-  width: 33%;
-  margin: 150px auto 150px;
-  font-size: 130px;
-  font-family: "Art";
-  -webkit-text-stroke: 3px rgb(255, 255, 216);
-}
+
 h2 {
   margin-left: 30px;
 }

@@ -143,12 +143,17 @@ li {
   cursor: pointer;
   position: relative;
 }
-
+.mobile-menu li {
+  opacity: 0.4;
+}
+.mobile-menu li:hover {
+  opacity: 1;
+}
 .submenu {
   display: none;
   text-align: center;
   width: 100%;
-  background: blueviolet;
+  background: rgb(61, 60, 60);
   margin-top: 30px;
   position: absolute;
   top: 100%;
