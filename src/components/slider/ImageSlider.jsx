@@ -43,7 +43,7 @@ const ImageSlider = ({ slidesToShow = 3 }) => {
         },
       },
       {
-        breakpoint: 820,
+        breakpoint: 1069,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -106,7 +106,7 @@ const ImageSlider = ({ slidesToShow = 3 }) => {
               <div className="new_pc2 ">콘솔</div>
             </div>
 
-            <h2 className="news_h">PUBG : 베틀그라운드 2024 로드맵</h2>
+            <h2 className="news_h">PUBG : 베틀그라운드 로드맵</h2>
           </div>
         </div>
         {/* ======= */}

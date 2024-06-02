@@ -272,7 +272,7 @@ body {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1069px) {
+@media screen and (min-width: 750px) and (max-width: 1069px) {
   .youtube_layout {
     width: 80%;
     height: 370px;
@@ -296,6 +296,49 @@ body {
 }
 .youtube_img:hover {
   box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 749px) {
+  .youtube_text {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 90px;
+    font-family: "Art";
+    -webkit-text-stroke: 3px rgb(255, 255, 216);
+    line-height: 0;
+  }
+  .youtube_layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .youtube_sc {
+    width: 450px;
+  }
+  .youtube_box {
+    width: 100%;
+    margin: 10px 13px 0 0;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .youtube_sc2 {
+    display: none;
+  }
+
+  .backGround2::before {
+    content: "";
+    background: url(../../img/background2.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+  }
 }
 
 @keyframes moveUp {

@@ -94,3 +94,46 @@
 h2 {
   margin-left: 30px;
 }
+
+@media screen and (max-width: 1070px) {
+  .news_lay {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .news_lay {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .news_lay {
+    margin-left: 12%;
+  }
+  .nextArrow,
+  .prevArrow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .news_lay {
+    margin-left: 5%;
+  }
+
+  .nextArrow,
+  .prevArrow {
+    display: none;
+  }
+}
+@media screen and (max-width: 570px) {
+  .news_lay {
+    margin-left: 2%;
+  }
+
+  .nextArrow,
+  .prevArrow {
+    display: none;
+  }
+}

@@ -51,7 +51,7 @@ const Header = () => {
               <a href="/">고객지원</a>
             </div>
             <div className="loginBox">
-              <a href="/">로그인</a>
+              <a href="/login">로그인</a>
               <div>&#124;</div>
               <div className="playButton"></div>
             </div>
